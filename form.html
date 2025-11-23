@@ -1,0 +1,276 @@
+<!-- contact.html (fragment to load into pages) -->
+
+<!-- GOOGLE FONT (remove this if already loaded globally) -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  .contact-section {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+
+  .contact-wrapper {
+    width: 100%;
+    padding: 20px 20px;
+    background:
+      linear-gradient(rgba(11, 25, 44, 0.75), rgba(11, 25, 44, 0.85)),
+      url('./images/boo-05.jpeg')
+      center/cover no-repeat;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 50%;
+  }
+
+  .contact-info h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .contact-info p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #e6e6e6;
+  }
+
+  .contact-info strong {
+    font-weight: 600;
+  }
+
+  .contact-info h3 {
+    font-size: 15px;
+    margin-top: 18px;
+    color: #FF6500;
+    font-weight: 600;
+  }
+
+  .contact-info span {
+    font-size: 15px;
+    display: block;
+    margin-top: 4px;
+  }
+
+  .contact-form {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+    color: #000;
+  }
+
+  .contact-form h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #0B192C;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #333333;
+    font-weight: 500;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #1E3E62;
+    background: transparent;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+  }
+
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #666666;
+    font-size: 14px;
+  }
+
+  .contact-form textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #FF6500;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 5px;
+  }
+
+  .submit-btn:hover {
+    background-color: #1E3E62;
+  }
+
+  @media (max-width: 900px) {
+    .contact-wrapper {
+      padding: 60px 15px;
+    }
+
+    .contact-container {
+      gap: 30px;
+    }
+
+    .contact-info h2 {
+      font-size: 28px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column-reverse;
+    }
+
+    .contact-form,
+    .contact-info {
+      width: 100%;
+    }
+
+    .contact-wrapper {
+      padding: 45px 15px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .contact-form {
+      padding: 25px 20px;
+    }
+
+    .contact-info h2 {
+      font-size: 24px;
+    }
+  }
+</style>
+
+<section id="contact" class="contact-section">
+  <div class="contact-wrapper">
+    <div class="contact-container">
+
+      <!-- CONTACT FORM -->
+      <form class="contact-form" action="submit_enquiry.php" method="POST">
+        <h3>ENQUIRY FORM FOR BOOM LIFTS / SCISSOR LIFTS</h3>
+
+        <div class="form-group">
+          <label for="full_name">Full Name*</label>
+          <input
+            type="text"
+            id="full_name"
+            name="full_name"
+            placeholder="Enter your full name"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address*</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Contact Number*</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter your contact number"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="location">Area / Location*</label>
+          <input
+            type="text"
+            id="location"
+            name="location"
+            placeholder="Eg: Guindy, Chennai"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="equipment">Select Equipment*</label>
+          <select id="equipment" name="equipment" required>
+            <option value="">-- SELECT EQUIPMENT --</option>
+            <option value="Boom Lift">BOOM LIFT</option>
+            <option value="Scissor Lift">SCISSOR LIFT</option>
+            <option value="Others">OTHERS</option>
+          </select>
+        </div>
+
+        <!-- <div class="form-group">
+          <label for="message">Additional Details (Optional)</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Tell us about height required, duration, site location, etc."
+          ></textarea>
+        </div> -->
+
+        <button type="submit" class="submit-btn">
+          REQUEST YOUR BEST QUOTE
+        </button>
+      </form>
+
+      <!-- CONTACT INFO -->
+      <div class="contact-info">
+        <h2>SEND US YOUR ENQUIRY</h2>
+        <p>
+          Reach out to us for boom lifts, scissor lifts, and man lift rentals in Chennai.
+          Share your requirement and we’ll send you a customized quote.
+        </p>
+        <p>
+          <strong>FAST RESPONSE • BEST RENTAL RATES • PROFESSIONAL SUPPORT</strong>
+        </p>
+
+        <h3>CALL</h3>
+        <span>+91 99999 99999</span>
+
+        <h3>EMAIL</h3>
+        <span>info@boomliftrentalschennai.com</span>
+
+        <h3>WORKING HOURS</h3>
+        <span>Mon – Sat, 9:00 AM to 7:00 PM</span>
+      </div>
+
+    </div>
+  </div>
+</section>

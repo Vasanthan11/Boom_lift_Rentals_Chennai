@@ -1,0 +1,904 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Boom Lift Rentals in Chennai | Articulated & Telescopic Boom Lifts</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Boom lift rentals in Chennai with articulated and telescopic boom lifts, trained operators and quick mobilisation for façade work, signage, plant maintenance and construction projects." />
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent: #FF6500;
+      --bg: #0B192C;
+      --bg-soft: #0F2238;
+      --panel: #0f2136;
+      --muted: #9fb2c8;
+      --white: #ffffff;
+      --container: 1100px;
+      --radius: 14px;
+      --shadow-lg: 0 18px 60px rgba(0,0,0,0.65);
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:"Poppins",sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(255,101,0,0.16), #0B192C 55%),
+        #020712;
+      color:var(--white);
+      -webkit-font-smoothing:antialiased;
+      line-height:1.6;
+    }
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+
+    .container{
+      max-width:var(--container);
+      margin:0 auto;
+      padding:0 20px;
+      text-align:center;
+    }
+
+    section{
+      padding:72px 0;
+    }
+
+    .eyebrow{
+      text-transform:uppercase;
+      font-size:12px;
+      letter-spacing:1.5px;
+      font-weight:600;
+      color:var(--muted);
+      margin-bottom:8px;
+    }
+
+    h1,h2,h3{
+      font-weight:700;
+      margin-bottom:10px;
+    }
+    h1{
+      font-size:38px;
+      line-height:1.1;
+    }
+    h2{
+      font-size:28px;
+    }
+    p.lead{
+      font-size:17px;
+      color:var(--muted);
+      max-width:780px;
+      margin:10px auto 0;
+    }
+    p.sub{
+      font-size:14px;
+      color:var(--muted);
+      max-width:760px;
+      margin:6px auto 0;
+    }
+
+    /* WhatsApp-style CTA button (used everywhere) */
+    .btn-whatsapp{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:11px 22px;
+      border-radius:999px;
+      border:2px solid var(--accent);
+      cursor:pointer;
+      font-weight:600;
+      font-size:14px;
+      text-transform:uppercase;
+      letter-spacing:0.8px;
+      background:var(--accent);
+      color:#ffffff;
+      transition:background 0.15s ease, color 0.15s ease;
+    }
+    .btn-whatsapp:hover{
+      background:#ffffff;
+      color:var(--accent);
+    }
+
+    /* Scroll reveal */
+    .reveal{
+      opacity:0;
+      transform:translateY(26px);
+      transition:opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    /* SECTION 1 – HERO (text + image) */
+    .hero{
+      padding-top:90px;
+      min-height:80vh;
+      display:flex;
+      align-items:center;
+      background:
+        radial-gradient(circle at top left, rgba(255,101,0,0.25), transparent 55%),
+        radial-gradient(circle at bottom right, rgba(7,42,89,0.7), transparent 55%);
+    }
+    .hero-inner{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:center;
+      gap:32px;
+    }
+    .hero-main{
+      flex:1 1 520px;
+      text-align:left;
+    }
+    .hero-main h1 span{color:var(--accent);}
+    .hero-main p.lead{
+      margin-left:0;
+    }
+    .hero-points{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin:18px 0 18px;
+      font-size:13px;
+      color:var(--muted);
+    }
+    .hero-points span{
+      padding:6px 12px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,0.16);
+      background:rgba(2,8,20,0.7);
+      white-space:nowrap;
+    }
+
+    .hero-visual{
+      flex:0.9 1 380px;
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow-lg);
+      border:1px solid rgba(255,255,255,0.12);
+      background:#020812;
+    }
+    .hero-visual img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      filter:brightness(0.88);
+      transition:transform 0.35s ease, filter 0.35s ease;
+    }
+    .hero-visual:hover img{
+      transform:scale(1.04);
+      filter:brightness(0.78);
+    }
+    .hero-badge{
+      position:absolute;
+      left:12px;
+      bottom:12px;
+      padding:6px 12px;
+      border-radius:999px;
+      background:rgba(0,0,0,0.7);
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:0.8px;
+    }
+    .hero-visual-wrap{
+      position:relative;
+    }
+    .hero-height-tag{
+      position:absolute;
+      right:12px;
+      top:12px;
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(255,101,0,0.9);
+      font-size:11px;
+      font-weight:600;
+    }
+
+    /* SECTION 2 – TYPES OF BOOM LIFTS (cards) */
+    .types{
+      background:var(--bg-soft);
+    }
+    .types-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr); /* for 4 cards: 2 x 2 grid */
+      gap:18px;
+      margin-top:26px;
+      text-align:left;
+    }
+    .type-card{
+      padding:18px;
+      border-radius:var(--radius);
+      background:rgba(5,18,34,0.98);       /* default blue card */
+      border:1px solid rgba(255,255,255,0.06);
+      box-shadow:var(--shadow-lg);
+      font-size:14px;
+    }
+    .type-card h3{
+      font-size:17px;
+      margin-bottom:4px;
+      color:var(--accent);
+    }
+    .type-tag{
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:1px;
+      color:var(--muted);
+      margin-bottom:6px;
+    }
+    .type-meta{
+      font-size:12px;
+      color:var(--muted);
+      margin-top:6px;
+    }
+    /* white variant cards (1 & 3) */
+    .type-card.white{
+      background:#ffffff;
+      color:#001;
+      border:1px solid rgba(0,0,0,0.06);
+      box-shadow:0 18px 40px rgba(0,0,0,0.35);
+    }
+    .type-card.white h3{
+      color:#d14500;
+    }
+    .type-card.white .type-tag,
+    .type-card.white .type-meta{
+      color:#555;
+    }
+
+    /* SECTION 3 – USE CASES WITH IMAGE (image + bullet list) */
+    .usecases{
+      background:#020a14;
+    }
+    .use-inner{
+      display:flex;
+      gap:28px;
+      align-items:center;
+      justify-content:center;
+      flex-wrap:wrap;
+      text-align:left;
+    }
+    .use-text{
+      flex:1 1 420px;
+    }
+    .use-list{
+      margin-top:14px;
+      list-style:none;
+      padding:0;
+    }
+    .use-list li{
+      margin-bottom:8px;
+      font-size:14px;
+      display:flex;
+      align-items:flex-start;
+      gap:8px;
+    }
+    .use-bullet{
+      width:7px;
+      height:7px;
+      border-radius:999px;
+      background:var(--accent);
+      margin-top:7px;
+      flex-shrink:0;
+    }
+
+    .use-image{
+      flex:0.9 1 360px;
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow-lg);
+      border:1px solid rgba(255,255,255,0.1);
+    }
+    .use-image img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      filter:brightness(0.88);
+      transition:transform 0.35s ease, filter 0.35s ease;
+    }
+    .use-image:hover img{
+      transform:scale(1.04);
+      filter:brightness(0.78);
+    }
+
+    /* SECTION 4 – SAFETY & PROCESS (two-column, white + dark cards) */
+    .safety{
+      background:radial-gradient(circle at top, rgba(255,101,0,0.2), transparent 55%);
+    }
+    .safety-layout{
+      display:grid;
+      grid-template-columns:1.1fr 1fr;
+      gap:24px;
+      margin-top:26px;
+      text-align:left;
+    }
+    .safety-box{
+      padding:18px;
+      border-radius:var(--radius);
+      background:rgba(5,18,34,0.97);
+      border:1px solid rgba(255,255,255,0.08);
+      box-shadow:var(--shadow-lg);
+      font-size:14px;
+    }
+    .safety-box h3{
+      font-size:18px;
+      margin-bottom:6px;
+    }
+    .safety-box p{
+      font-size:14px;
+      color:var(--muted);
+      margin-bottom:6px;
+    }
+    .safety-box.white{
+      background:#ffffff;
+      color:#001;
+    }
+    .safety-box.white p{
+      color:#444;
+    }
+    .safety-box.white h3{
+      color:#d14500;
+    }
+
+    .steps-small{
+      list-style:none;
+      padding:0;
+    }
+    .steps-small li{
+      display:flex;
+      align-items:flex-start;
+      gap:10px;
+      margin-bottom:10px;
+      font-size:14px;
+    }
+    .step-badge{
+      width:22px;
+      height:22px;
+      border-radius:999px;
+      background:#ffffff;
+      border:2px solid var(--accent);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:11px;
+      font-weight:700;
+      color:var(--accent);
+      flex-shrink:0;
+      margin-top:2px;
+    }
+
+    /* SECTION 5 – BOTTOM ENQUIRY BAND */
+    .enquiry-band{
+      background:var(--accent);
+      color:#ffffff;
+      padding-top:40px;
+      padding-bottom:0;
+      width:100%;
+    }
+    .enquiry-inner{
+      width:100%;
+      margin:0;
+      padding:0;
+    }
+    .enquiry-header{
+      max-width:var(--container);
+      margin:0 auto;
+      padding:0 20px 22px;
+      text-align:center;
+      color:#ffffff;
+    }
+    .enquiry-header .eyebrow{
+      color:#ffe0c8;
+    }
+    .enquiry-header p.sub{
+      color:#ffe0c8;
+    }
+    .enquiry-form-wrap{
+      width:100%;
+    }
+    .enquiry-form-wrap > div{
+      width:100%;
+    }
+
+    /* Modal popup */
+    .modal-backdrop{
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,0.85);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:18px;
+      z-index:1900;
+      opacity:0;
+      pointer-events:none;
+      transition:opacity 0.2s ease;
+    }
+    .modal-backdrop.open{
+      opacity:1;
+      pointer-events:auto;
+    }
+    .modal-card{
+      position:relative;
+      max-width:820px;
+      width:100%;
+      max-height:90vh;
+      background:#ffffff;
+      border-radius:var(--radius);
+      /* padding:20px 18px 18px; */
+      overflow:auto;
+    }
+    .modal-close{
+      position:absolute;
+      right:20px;
+      top:22px;
+      border:none;
+      background:transparent;
+      font-size:20px;
+      cursor:pointer;
+      color:#333;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width:1024px){
+      h1{font-size:32px;}
+      h2{font-size:24px;}
+      .safety-layout{grid-template-columns:1fr;}
+    }
+
+    @media (max-width:768px){
+      main{padding-top:80px;}
+      section{padding:56px 0;}
+      .hero{
+        padding-top:70px;
+        min-height:auto;
+      }
+      .hero-inner{
+        flex-direction:column;
+        text-align:center;
+      }
+      .hero-main{
+        text-align:center;
+      }
+      .hero-main p.lead{
+        margin:10px auto 0;
+      }
+      .hero-points{
+        justify-content:center;
+      }
+      .hero-points span{
+        white-space:normal;
+      }
+      .use-inner{
+        flex-direction:column;
+      }
+      .types-grid{grid-template-columns:1fr;}
+    }
+
+    @media (max-width:480px){
+      h1{font-size:24px;}
+      h2{font-size:20px;}
+      p.lead{font-size:15px;}
+      .hero-points{font-size:12px;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR fragment placeholder -->
+  <div id="navbar"></div>
+
+  <main>
+
+    <!-- 1. HERO: BOOM LIFT RENTALS CHENNAI -->
+    <section class="hero" id="top">
+      <div class="container hero-inner reveal">
+
+        <div class="hero-main">
+          <div class="eyebrow">Boom Lift Rentals – Chennai</div>
+          <h1>
+            Articulated & Telescopic <span>Boom Lift Rentals in Chennai</span>
+          </h1>
+          <p class="lead">
+            Rent boom lifts in Chennai for façade work, signage installation, plant maintenance and high-reach construction jobs.
+            Choose articulated or telescopic boom lifts with or without trained operators based on your site.
+          </p>
+          <div class="hero-points">
+            <span>Working heights – approx. 30 ft to 135 ft*</span>
+            <span>Articulated boom lifts for “up-and-over” access</span>
+            <span>Telescopic boom lifts for long horizontal reach</span>
+          </div>
+          <button class="btn-whatsapp js-open-enquiry" data-prefill="Boom lift rental quote - Chennai">
+            Get boom lift rental quote in Chennai
+          </button>
+        </div>
+
+        <div class="hero-visual-wrap">
+          <div class="hero-visual">
+            <img src="./images/bb2.webp" alt="Boom lift working at height on a building in Chennai">
+          </div>
+          <!-- <div class="hero-badge">Chennai boom lift jobs – façade, MEP, signage</div> -->
+          <div class="hero-height-tag">Up to ~135 ft* model dependent</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. TYPES OF BOOM LIFTS – 4 CARDS (WHITE, BLUE, WHITE, BLUE) -->
+    <section class="types" id="types">
+      <div class="container reveal">
+        <div class="eyebrow">Boom Lift Types – Chennai Fleet</div>
+        <h2>Choose the right boom lift rental for your Chennai site</h2>
+        <p class="lead">
+          Based on working height, outreach and access conditions, we help you choose between articulated boom lifts,
+          telescopic boom lifts and electric or diesel-powered options for your Chennai project.
+        </p>
+
+        <div class="types-grid">
+          <!-- Card 1: WHITE -->
+          <div class="type-card white">
+            <div class="type-tag">Articulated (Knuckle) Boom Lifts</div>
+            <h3>For “up-and-over” access with obstacles</h3>
+            <p>
+              Ideal where you need to reach over parapets, ducts or signage frames. Articulated booms use jointed
+              sections to move around obstacles and access awkward spots on Chennai sites.
+            </p>
+            <p class="type-meta">
+              Common uses: façade repairs, exterior cleaning, electrical and piping work around structures.
+            </p>
+          </div>
+
+          <!-- Card 2: BLUE -->
+          <div class="type-card">
+            <div class="type-tag">Telescopic (Straight) Boom Lifts</div>
+            <h3>For maximum horizontal reach</h3>
+            <p>
+              Telescopic boom lifts extend in a straight line and are suited to open job sites that need high vertical
+              and long horizontal reach – such as flyovers, tall signage or large industrial sheds.
+            </p>
+            <p class="type-meta">
+              Typical working heights can go beyond 100 ft on selected models, depending on availability.
+            </p>
+          </div>
+
+          <!-- Card 3: WHITE -->
+          <div class="type-card white">
+            <div class="type-tag">Electric & Diesel Boom Lifts</div>
+            <h3>Match power source to your environment</h3>
+            <p>
+              Electric boom lifts are quieter with low emissions, suitable for indoor or sensitive locations in Chennai.
+              Diesel boom lifts suit outdoor, rough-terrain and long-duration construction work.
+            </p>
+            <p class="type-meta">
+              We’ll recommend boom lift models based on indoor/outdoor use, access width and floor conditions.
+            </p>
+          </div>
+
+          <!-- Card 4: BLUE -->
+          <div class="type-card">
+            <div class="type-tag">Truck-Mounted Boom Lifts</div>
+            <h3>For road-side and multi-site work</h3>
+            <p>
+              Truck-mounted boom lifts are useful for signage, street lighting and jobs where you need to cover multiple
+              locations in and around Chennai in a single day with faster mobilisation.
+            </p>
+            <p class="type-meta">
+              Common uses: highways, city streets, airport roads and maintenance along long stretches of façade.
+            </p>
+          </div>
+        </div>
+
+        <div style="margin-top:22px;">
+          <button class="btn-whatsapp js-open-enquiry" data-prefill="Help choosing boom lift type - Chennai">
+            Ask which boom lift is right for my Chennai job
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. USE CASES + IMAGE -->
+    <section class="usecases" id="usecases">
+      <div class="container use-inner reveal">
+        <div class="use-image">
+          <img src="./images/008.webp" style="background-color: white;" alt="Boom lift rental used for façade and glazing in Chennai">
+        </div>
+
+        <div class="use-text">
+          <div class="eyebrow">Typical Chennai Boom Lift Jobs</div>
+          <h2>Where boom lift rentals are used in Chennai</h2>
+          <p class="lead">
+            Boom lifts are chosen when scaffolding is slow or when you need flexible horizontal reach at height.
+            In Chennai we commonly see boom lift rentals used for:
+          </p>
+
+          <ul class="use-list">
+            <li>
+              <span class="use-bullet"></span>
+              <span>High-rise façade, glazing and exterior painting on commercial and residential towers.</span>
+            </li>
+            <li>
+              <span class="use-bullet"></span>
+              <span>Signage, hoardings and pylon boards along highways, malls and showrooms.</span>
+            </li>
+            <li>
+              <span class="use-bullet"></span>
+              <span>MEP and plant maintenance at refineries, power plants, industrial estates and ports.</span>
+            </li>
+            <li>
+              <span class="use-bullet"></span>
+              <span>Lighting, camera and rigging work for events, film shoots and stadium projects in Chennai.</span>
+            </li>
+            <li>
+              <span class="use-bullet"></span>
+              <span>Bridge, flyover and metro station work where controlled outreach is required.</span>
+            </li>
+          </ul>
+
+          <div style="margin-top:18px;">
+            <button class="btn-whatsapp js-open-enquiry" data-prefill="Boom lift rental for specific Chennai job">
+              Tell us about your Chennai boom lift job
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SAFETY & RENTAL PROCESS -->
+    <section class="safety" id="safety">
+      <div class="container reveal">
+        <div class="eyebrow">Safety & Rental Process</div>
+        <h2>Safe boom lift rentals in Chennai with clear steps</h2>
+        <p class="lead">
+          We focus on pre-hire checks, basic safety practices and simple rental steps so your boom lift reaches the
+          Chennai site ready to work.
+        </p>
+
+        <div class="safety-layout">
+          <div class="safety-box">
+            <h3>Safety & inspection checks</h3>
+            <p>
+              Before a boom lift leaves for your Chennai site, key functions are checked – controls, hydraulics,
+              emergency lowering and platform guardrails – in line with common industry guidelines for aerial work platforms.
+            </p>
+            <p>
+              Operators are requested to keep outriggers or stabilisers properly deployed, avoid overloading the
+              platform and respect safe working distances from power lines.
+            </p>
+            <p>
+              Where you request an operator, we focus on trained personnel familiar with boom lift controls and
+              basic fall-protection practices.
+            </p>
+            <div style="margin-top:12px;">
+              <button class="btn-whatsapp js-open-enquiry" data-prefill="Boom lift safety & operator details - Chennai">
+                Ask about boom lift safety & operators
+              </button>
+            </div>
+          </div>
+
+          <div class="safety-box white">
+            <h3>Simple boom lift rental steps – Chennai</h3>
+            <ul class="steps-small">
+              <li>
+                <div class="step-badge">1</div>
+                <span>Share site address in Chennai, indoor/outdoor, approximate height and reachable area.</span>
+              </li>
+              <li>
+                <div class="step-badge">2</div>
+                <span>We suggest articulated or telescopic boom lift models, power source and operator options.</span>
+              </li>
+              <li>
+                <div class="step-badge">3</div>
+                <span>You confirm boom lift rental rates, mobilisation, duration and any overtime terms.</span>
+              </li>
+              <li>
+                <div class="step-badge">4</div>
+                <span>The boom lift is mobilised to your Chennai location and basic checks are done at site.</span>
+              </li>
+            </ul>
+            <div style="margin-top:10px;">
+              <button class="btn-whatsapp js-open-enquiry" data-prefill="Start boom lift rental process - Chennai">
+                Start boom lift rental process
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FULL-WIDTH ENQUIRY FORM (BOTTOM, ORANGE SECTION) -->
+    <section class="enquiry-band" id="enquiry">
+      <div class="enquiry-inner reveal">
+        <div class="enquiry-header">
+          <div class="eyebrow">Enquiry Form – Chennai Boom Lift Rentals</div>
+          <h2>Tell us about your Chennai boom lift requirement</h2>
+          <p class="sub">
+            Share working height, outreach needed, site location in Chennai, duration and if you need an operator.
+            We’ll reply with a boom lift rental quote and suitable model suggestions.
+          </p>
+        </div>
+
+        <!-- this div will be filled with form.html (full width to the site) -->
+        <div class="enquiry-form-wrap" id="boom-enquiry-form"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER fragment placeholder -->
+  <div id="footer"></div>
+
+  <!-- POPUP MODAL (FORM LOADED HERE TOO) -->
+  <div id="modalBackdrop" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close js-close" aria-label="Close">✕</button>
+      <div id="popup-form-slot"></div>
+    </div>
+  </div>
+
+<script>
+  (function(){
+    /* Load fragments: navbar, footer, form */
+    function loadFragment(id, url, cb){
+      var el = document.getElementById(id);
+      if(!el) return;
+      fetch(url)
+        .then(function(r){ return r.ok ? r.text() : Promise.reject(r.status); })
+        .then(function(html){
+          el.innerHTML = html;
+          if(typeof cb === "function") cb();
+        })
+        .catch(function(err){
+          console.warn("Fragment load failed:", url, err);
+          if(id === "navbar"){
+            el.innerHTML =
+              '<header style="position:fixed;top:0;left:0;right:0;background:#0B192C;padding:12px 0;z-index:1500;box-shadow:0 6px 20px rgba(0,0,0,0.6);">' +
+                '<div style="max-width:1100px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;">' +
+                  '<div style="font-weight:800;color:#FF6500;">BOOM LIFT RENTALS CHENNAI</div>' +
+                  '<a href="#enquiry" style="font-size:13px;padding:8px 14px;border-radius:999px;background:#FF6500;color:#fff;font-weight:600;border:2px solid #FF6500;">Enquire</a>' +
+                '</div>' +
+              '</header>';
+          }
+          if(id === "footer"){
+            el.innerHTML =
+              '<footer style="padding:18px 10px;text-align:center;font-size:13px;color:#9fb2c8;background:#020712;border-top:1px solid rgba(255,255,255,0.08);">' +
+              '© 2025 Boomlift Rentals Chennai. All rights reserved.' +
+              '</footer>';
+          }
+        });
+    }
+
+    function initNavbarScripts(){
+      var navWrapper = document.getElementById('navbar');
+      if(!navWrapper) return;
+
+      /* Set active nav link based on current page */
+      var links = navWrapper.querySelectorAll('.nav-menu a');
+      var current = location.pathname.split('/').pop() || 'index.html';
+      links.forEach(function(a){
+        a.classList.remove('active');
+        var href = a.getAttribute('href') || '';
+        if(current === '' && href === 'index.html'){ a.classList.add('active'); }
+        if(href === current){ a.classList.add('active'); }
+      });
+
+      /* Ensure boom lift link is active on this page */
+      if(current === 'boom-lift-rentals.html'){
+        links.forEach(function(a){
+          if((a.getAttribute('href') || '').indexOf('boom-lift-rentals') !== -1){
+            a.classList.add('active');
+          }
+        });
+      }
+
+      var menu = navWrapper.querySelector('#navMenu');
+      var hamb = navWrapper.querySelector('.hamburger');
+
+      if(!menu || !hamb) return;
+
+      function doToggleMenu(){
+        menu.classList.toggle('show');
+      }
+
+      // expose in case inline onclick is present in navbar.html
+      window.toggleMenu = doToggleMenu;
+
+      hamb.addEventListener('click', function(e){
+        e.preventDefault();
+        doToggleMenu();
+      });
+    }
+
+    loadFragment("navbar","navbar.html", initNavbarScripts);
+    loadFragment("footer","footer.html");
+    loadFragment("boom-enquiry-form","form.html");
+    loadFragment("popup-form-slot","form.html");
+
+    /* Modal logic */
+    var modal = document.getElementById("modalBackdrop");
+    var popupSlot = document.getElementById("popup-form-slot");
+
+    function openEnquiryModal(prefillText){
+      if(!modal) return;
+      modal.classList.add("open");
+      modal.setAttribute("aria-hidden","false");
+
+      setTimeout(function(){
+        try{
+          var form = popupSlot.querySelector("form");
+          if(form && prefillText){
+            var sel = form.querySelector("select[name='equipment']");
+            if(sel){
+              var key = prefillText.toLowerCase();
+              var matched = false;
+              for(var i=0;i<sel.options.length;i++){
+                var t = sel.options[i].text.toLowerCase();
+                if(key.indexOf("boom") !== -1 && t.indexOf("boom") !== -1){ sel.selectedIndex = i; matched = true; break; }
+                if(key.indexOf("scissor") !== -1 && t.indexOf("scissor") !== -1){ sel.selectedIndex = i; matched = true; break; }
+                if(key.indexOf("man") !== -1 || key.indexOf("mast") !== -1){
+                  if(t.indexOf("other") !== -1 || t.indexOf("man") !== -1){ sel.selectedIndex = i; matched = true; break; }
+                }
+              }
+              if(!matched && sel.options.length) sel.selectedIndex = 0;
+            }
+          }
+        }catch(e){}
+      },150);
+    }
+
+    function closeEnquiryModal(){
+      if(!modal) return;
+      modal.classList.remove("open");
+      modal.setAttribute("aria-hidden","true");
+    }
+
+    document.addEventListener("click", function(e){
+      var btn = e.target.closest(".js-open-enquiry");
+      if(btn){
+        e.preventDefault();
+        var pre = btn.getAttribute("data-prefill") || btn.textContent;
+        openEnquiryModal(pre.trim());
+        return;
+      }
+
+      if(e.target.closest(".js-close") || e.target.closest(".modal-close")){
+        e.preventDefault();
+        closeEnquiryModal();
+        return;
+      }
+
+      if(e.target === modal){
+        closeEnquiryModal();
+      }
+    });
+
+    document.addEventListener("keydown", function(e){
+      if(e.key === "Escape") closeEnquiryModal();
+    });
+
+    /* Scroll reveal init */
+    function initReveal(){
+      var els = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+      if(!('IntersectionObserver' in window)){
+        els.forEach(function(el){ el.classList.add('visible'); });
+        return;
+      }
+      var obs = new IntersectionObserver(function(entries, observer){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting){
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      els.forEach(function(el){ obs.observe(el); });
+    }
+
+    document.addEventListener('DOMContentLoaded', initReveal);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,948 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Scissor Lift Rentals in Chennai | Electric & Rough-Terrain Scissor Lifts</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Scissor lift rentals in Chennai – electric and rough-terrain scissor lifts for warehouses, malls, fit-out and construction with quick mobilisation and operator options." />
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent: #FF6500;
+      --bg: #0B192C;
+      --bg-soft: #0F2238;
+      --panel: #0f2136;
+      --muted: #9fb2c8;
+      --white: #ffffff;
+      --container: 1100px;
+      --radius: 14px;
+      --shadow-lg: 0 18px 60px rgba(0,0,0,0.65);
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:"Poppins",sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(255,101,0,0.16), #0B192C 55%),
+        #020712;
+      color:var(--white);
+      -webkit-font-smoothing:antialiased;
+      line-height:1.6;
+    }
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+
+    .container{
+      max-width:var(--container);
+      margin:0 auto;
+      padding:0 20px;
+      text-align:center;
+    }
+
+    section{
+      padding:72px 0;
+    }
+
+    .eyebrow{
+      text-transform:uppercase;
+      font-size:12px;
+      letter-spacing:1.5px;
+      font-weight:600;
+      color:var(--muted);
+      margin-bottom:8px;
+    }
+
+    h1,h2,h3{
+      font-weight:700;
+      margin-bottom:10px;
+    }
+    h1{
+      font-size:38px;
+      line-height:1.1;
+    }
+    h2{
+      font-size:28px;
+    }
+    p.lead{
+      font-size:17px;
+      color:var(--muted);
+      max-width:780px;
+      margin:10px auto 0;
+    }
+    p.sub{
+      font-size:14px;
+      color:var(--muted);
+      max-width:760px;
+      margin:6px auto 0;
+    }
+
+    /* WhatsApp-style CTA button (used everywhere) */
+    .btn-whatsapp{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:11px 22px;
+      border-radius:999px;
+      border:2px solid var(--accent);
+      cursor:pointer;
+      font-weight:600;
+      font-size:14px;
+      text-transform:uppercase;
+      letter-spacing:0.8px;
+      background:var(--accent);
+      color:#ffffff;
+      transition:background 0.15s ease, color 0.15s ease;
+      /* no box-shadow on buttons */
+    }
+    .btn-whatsapp:hover{
+      background:#ffffff;
+      color:var(--accent);
+    }
+
+    /* Scroll reveal */
+    .reveal{
+      opacity:0;
+      transform:translateY(26px);
+      transition:opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    /* SECTION 1 – HERO (text + image) */
+    .hero{
+      padding-top:90px;
+      min-height:80vh;
+      display:flex;
+      align-items:center;
+      background:
+        radial-gradient(circle at top left, rgba(255,101,0,0.25), transparent 55%),
+        radial-gradient(circle at bottom right, rgba(7,42,89,0.7), transparent 55%);
+    }
+    .hero-inner{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:center;
+      gap:32px;
+    }
+    .hero-main{
+      flex:1 1 520px;
+      text-align:left;
+    }
+    .hero-main h1 span{color:var(--accent);}
+    .hero-main p.lead{
+      margin-left:0;
+    }
+    .hero-points{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin:18px 0 18px;
+      font-size:13px;
+      color:var(--muted);
+    }
+    .hero-points span{
+      padding:6px 12px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,0.16);
+      background:rgba(2,8,20,0.7);
+      white-space:nowrap;
+    }
+
+    .hero-visual-wrap{
+      position:relative;
+    }
+    .hero-visual{
+      flex:0.9 1 380px;
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow-lg);
+      border:1px solid rgba(255,255,255,0.12);
+      background:#020812;
+    }
+    .hero-visual img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      filter:brightness(0.88);
+      transition:transform 0.35s ease, filter 0.35s ease;
+    }
+    .hero-visual:hover img{
+      transform:scale(1.04);
+      filter:brightness(0.78);
+    }
+    .hero-badge{
+      position:absolute;
+      left:12px;
+      bottom:12px;
+      padding:6px 12px;
+      border-radius:999px;
+      background:rgba(0,0,0,0.7);
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:0.8px;
+    }
+    .hero-height-tag{
+      position:absolute;
+      right:12px;
+      top:12px;
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(255,101,0,0.9);
+      font-size:11px;
+      font-weight:600;
+    }
+
+    /* SECTION 2 – TYPES & ADVANTAGES (cards) */
+    .types{
+      background:var(--bg-soft);
+    }
+    .types-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+      margin-top:26px;
+      text-align:left;
+    }
+    .type-card{
+      padding:18px;
+      border-radius:var(--radius);
+      background:rgba(5,18,34,0.98);
+      border:1px solid rgba(255,255,255,0.06);
+      box-shadow:var(--shadow-lg);
+      font-size:14px;
+    }
+    .type-card h3{
+      font-size:17px;
+      margin-bottom:4px;
+      color:var(--accent);
+    }
+    .type-tag{
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:1px;
+      color:var(--muted);
+      margin-bottom:6px;
+    }
+    .type-meta{
+      font-size:12px;
+      color:var(--muted);
+      margin-top:6px;
+    }
+    .type-card.white{
+      background:#ffffff;
+      color:#001;
+      border:1px solid rgba(0,0,0,0.06);
+      box-shadow:0 18px 40px rgba(0,0,0,0.35);
+    }
+    .type-card.white h3{
+      color:#d14500;
+    }
+    .type-card.white .type-tag,
+    .type-card.white .type-meta{
+      color:#555;
+    }
+
+    /* SECTION 3 – FULL-WIDTH MOVING GALLERY (70vh) */
+    .strip-gallery{
+      background:#020711;
+      min-height:70vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      padding:40px 0 40px;
+    }
+    .strip-head{
+      max-width:var(--container);
+      margin:0 auto 16px;
+      padding:0 20px;
+      text-align:center;
+    }
+
+    .strip-outer{
+      width:100vw;
+      overflow:hidden;
+    }
+    .strip-track{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      will-change:transform;
+      animation: stripMove 24s linear infinite;
+    }
+    /* move from right to left */
+    @keyframes stripMove{
+      0%{ transform:translateX(0); }
+      100%{ transform:translateX(-50%); }
+    }
+    .strip-gallery:hover .strip-track{
+      animation-play-state:paused;
+    }
+
+    .strip-item{
+      position:relative;
+      flex:0 0 360px;
+      height:60vh;
+      max-height:480px;
+      border-radius:var(--radius);
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,0.06);
+      box-shadow:var(--shadow-lg);
+      cursor:pointer;
+    }
+    .strip-item img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      filter:brightness(0.86);
+      transition:transform 0.35s ease, filter 0.35s ease;
+    }
+    .strip-item::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      border-radius:inherit;
+      background:linear-gradient(180deg, rgba(255,101,0,0.18), rgba(0,0,0,0.35));
+      opacity:0;
+      pointer-events:none;
+      transition:opacity 0.3s ease;
+    }
+    .strip-item:hover img{
+      transform:scale(1.05);
+      filter:brightness(0.8);
+    }
+    .strip-item:hover::after{
+      opacity:1; /* soft orange gradient on hover */
+    }
+
+    /* NOTE: we removed the small text & "Get quote" badges on images in this section */
+
+    /* SECTION 4 – WHERE & PROCESS (two block layout) */
+    .process{
+      background:radial-gradient(circle at top, rgba(255,101,0,0.18), transparent 55%);
+    }
+    .process-layout{
+      display:grid;
+      grid-template-columns:1.1fr 1fr;
+      gap:24px;
+      margin-top:26px;
+      text-align:left;
+    }
+    .process-box{
+      padding:18px;
+      border-radius:var(--radius);
+      background:rgba(5,18,34,0.97);
+      border:1px solid rgba(255,255,255,0.08);
+      box-shadow:var(--shadow-lg);
+      font-size:14px;
+    }
+    .process-box h3{
+      font-size:18px;
+      margin-bottom:6px;
+    }
+    .process-box p{
+      font-size:14px;
+      color:var(--muted);
+      margin-bottom:6px;
+    }
+    .process-box.white{
+      background:#ffffff;
+      color:#001;
+    }
+    .process-box.white p{
+      color:#444;
+    }
+    .process-box.white h3{
+      color:#d14500;
+    }
+
+    .steps-small{
+      list-style:none;
+      padding:0;
+    }
+    .steps-small li{
+      display:flex;
+      align-items:flex-start;
+      gap:10px;
+      margin-bottom:10px;
+      font-size:14px;
+    }
+    .step-badge{
+      width:22px;
+      height:22px;
+      border-radius:999px;
+      background:#ffffff;
+      border:2px solid var(--accent);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:11px;
+      font-weight:700;
+      color:var(--accent);
+      flex-shrink:0;
+      margin-top:2px;
+    }
+
+    .areas-tags{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:10px;
+    }
+    .areas-tags span{
+      padding:6px 11px;
+      border-radius:999px;
+      background:rgba(1,9,20,0.8);
+      border:1px solid rgba(255,255,255,0.16);
+      font-size:13px;
+      color:var(--muted);
+    }
+    .areas-tags span:hover{
+      background:var(--accent);
+      color:#ffffff;
+      border-color:var(--accent);
+    }
+
+    /* SECTION 5 – FULL-WIDTH ENQUIRY FORM (BOTTOM, ORANGE) */
+    .enquiry-band{
+      background:var(--accent);
+      color:#ffffff;
+      padding-top:40px;
+      padding-bottom:0;
+      width:100%;
+    }
+    .enquiry-inner{
+      width:100%;
+      margin:0;
+      padding:0;
+    }
+    .enquiry-header{
+      max-width:var(--container);
+      margin:0 auto;
+      padding:0 20px 22px;
+      text-align:center;
+      color:#ffffff;
+    }
+    .enquiry-header .eyebrow{
+      color:#ffe0c8;
+    }
+    .enquiry-header p.sub{
+      color:#ffe0c8;
+    }
+    .enquiry-form-wrap{
+      width:100%;
+    }
+    .enquiry-form-wrap > div{
+      width:100%;
+    }
+
+    /* Modal popup */
+    .modal-backdrop{
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,0.85);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:18px;
+      z-index:1900;
+      opacity:0;
+      pointer-events:none;
+      transition:opacity 0.2s ease;
+    }
+    .modal-backdrop.open{
+      opacity:1;
+      pointer-events:auto;
+    }
+    .modal-card{
+      position:relative;
+      max-width:820px;
+      width:100%;
+      max-height:90vh;
+      background:#ffffff;
+      border-radius:var(--radius);
+      /* padding:20px 18px 18px; */
+      overflow:auto;
+    }
+    .modal-close{
+      position:absolute;
+      right:20px;
+      top:22px;
+      border:none;
+      background:transparent;
+      font-size:20px;
+      cursor:pointer;
+      color:#333;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width:1024px){
+      h1{font-size:32px;}
+      h2{font-size:24px;}
+      .types-grid{grid-template-columns:repeat(2,1fr);}
+      .process-layout{grid-template-columns:1fr;}
+    }
+
+    @media (max-width:768px){
+      main{padding-top:80px;}
+      section{padding:56px 0;}
+      .hero{
+        padding-top:70px;
+        min-height:auto;
+      }
+      .hero-inner{
+        flex-direction:column;
+        text-align:center;
+      }
+      .hero-main{
+        text-align:center;
+      }
+      .hero-main p.lead{
+        margin:10px auto 0;
+      }
+      .hero-points{
+        justify-content:center;
+      }
+      .hero-points span{
+        white-space:normal;
+      }
+
+      .types-grid{grid-template-columns:1fr;}
+
+      .strip-item{
+        flex:0 0 260px;
+        height:55vh;
+      }
+
+      .process-layout{grid-template-columns:1fr;}
+    }
+
+    @media (max-width:480px){
+      h1{font-size:24px;}
+      h2{font-size:20px;}
+      p.lead{font-size:15px;}
+      .hero-points{font-size:12px;}
+      .strip-item{
+        flex:0 0 220px;
+        height:50vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR fragment placeholder -->
+  <div id="navbar"></div>
+
+  <main>
+
+    <!-- SECTION 1 – HERO -->
+    <section class="hero" id="top">
+      <div class="container hero-inner reveal">
+
+        <div class="hero-main">
+          <div class="eyebrow">Scissor Lift Rentals – Chennai</div>
+          <h1>
+            Reliable <span>Scissor Lift Rentals in Chennai</span> for indoor & outdoor work
+          </h1>
+          <p class="lead">
+            Rent scissor lifts in Chennai for warehouses, malls, fit-out projects and construction sites. Choose electric
+            scissor lifts for indoor work or rough-terrain scissor lifts for outdoor and heavy-duty use.
+          </p>
+          <div class="hero-points">
+            <span>Typical working heights ~19–50 ft*</span>
+            <span>Wide platforms & higher load capacity</span>
+            <span>Indoor electric & outdoor rough-terrain options</span>
+          </div>
+          <button class="btn-whatsapp js-open-enquiry" data-prefill="Scissor lift rental quote - Chennai">
+            Get scissor lift rental quote in Chennai
+          </button>
+        </div>
+
+        <div class="hero-visual-wrap">
+          <div class="hero-visual">
+            <img src="./images/sci-main.jpg" alt="Scissor lift working inside a warehouse in Chennai">
+          </div>
+          <div class="hero-badge">Chennai scissor lift jobs – warehouses, malls, fit-outs</div>
+          <div class="hero-height-tag">Approx. 19–50 ft* models</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2 – TYPES & ADVANTAGES -->
+    <section class="types" id="types">
+      <div class="container reveal">
+        <div class="eyebrow">Scissor Lift Types – Chennai Fleet</div>
+        <h2>Electric & rough-terrain scissor lifts for Chennai projects</h2>
+        <p class="lead">
+          We help you choose the right scissor lift rental in Chennai based on height, platform size, load capacity,
+          indoor/outdoor use and floor conditions.
+        </p>
+
+        <div class="types-grid">
+          <!-- Card 1: WHITE -->
+          <div class="type-card white">
+            <div class="type-tag">Electric Scissor Lifts</div>
+            <h3>Quiet, zero-emission lifts for indoor Chennai jobs</h3>
+            <p>
+              Electric scissor lifts are battery-powered, quiet and emission-free – ideal for malls, warehouses,
+              hospitals and office fit-outs where fumes and noise must be kept low.
+            </p>
+            <p class="type-meta">
+              Best for: indoor maintenance, racking, retail fit-out and event setups on level, finished floors.
+            </p>
+          </div>
+
+          <!-- Card 2: BLUE -->
+          <div class="type-card">
+            <div class="type-tag">Rough-Terrain Scissor Lifts</div>
+            <h3>Outdoor scissor lifts for uneven Chennai sites</h3>
+            <p>
+              Rough-terrain scissor lifts use diesel or hybrid power and heavy-duty tyres to work on construction sites,
+              yards and uneven surfaces where extra traction and higher load capacity are needed.
+            </p>
+            <p class="type-meta">
+              Best for: outdoor construction, industrial yards, infrastructure work and heavy materials at height.
+            </p>
+          </div>
+
+          <!-- Card 3: WHITE -->
+          <div class="type-card white">
+            <div class="type-tag">Narrow & Compact Scissor Lifts</div>
+            <h3>Access through aisles & doorways</h3>
+            <p>
+              Narrow electric scissor lifts are designed to pass through standard doorways and operate in tight aisles
+              while still providing safe platform height for indoor work in Chennai.
+            </p>
+            <p class="type-meta">
+              Best for: warehouses, IT offices, showrooms and other sites with limited space.
+            </p>
+          </div>
+        </div>
+
+        <div style="margin-top:22px;">
+          <button class="btn-whatsapp js-open-enquiry" data-prefill="Help choosing scissor lift type - Chennai">
+            Ask which scissor lift suits my Chennai site
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 – FULL-WIDTH MOVING GALLERY (70vh) -->
+    <section class="strip-gallery" id="gallery">
+      <div class="strip-head reveal">
+        <div class="eyebrow">Sample Chennai Scissor Lift Work</div>
+        <h2>See where scissor lift rentals are used in Chennai</h2>
+        <p class="sub">
+          Click any image close to your job – the enquiry form will open so you can request a Chennai scissor lift quote.
+        </p>
+      </div>
+
+      <div class="strip-outer">
+        <div id="stripTrack" class="strip-track">
+          <!-- Base items – JS will duplicate for looping -->
+          <div class="strip-item" data-prefill="Warehouse racking scissor lift rental - Chennai">
+            <img src="./images/sci-005.jpg" alt="Scissor lift in warehouse for racking in Chennai">
+          </div>
+
+          <div class="strip-item" data-prefill="Mall and atrium scissor lift rental - Chennai">
+            <img src="./images/010.webp" alt="Scissor lift in mall atrium in Chennai">
+          </div>
+
+          <div class="strip-item" data-prefill="Construction site rough-terrain scissor lift rental - Chennai">
+            <img src="./images/sci-004.jpg" alt="Rough-terrain scissor lift on Chennai construction site">
+          </div>
+
+          <div class="strip-item" data-prefill="Event setup scissor lift rental - Chennai">
+            <img src="./images/bb0.jpg" alt="Scissor lift for events and camera work in Chennai">
+          </div>
+
+          <div class="strip-item" data-prefill="Hospital / facility maintenance scissor lift rental - Chennai">
+            <img src="./images/jlg.png" alt="Scissor lift for facility maintenance in Chennai">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4 – WHERE THEY WORK & PROCESS -->
+    <section class="process" id="process">
+      <div class="container reveal">
+        <div class="eyebrow">How Chennai Teams Use Scissor Lifts</div>
+        <h2>Where scissor lift rentals fit and how the rental process works</h2>
+        <p class="lead">
+          Scissor lifts in Chennai are widely used wherever you need a stable platform and straight vertical access
+          instead of scaffolding.
+        </p>
+
+        <div class="process-layout">
+          <div class="process-box">
+            <h3>Common Chennai scissor lift applications</h3>
+            <p>
+              We regularly see Chennai scissor lift rentals for jobs such as:
+            </p>
+            <div class="areas-tags">
+              <span>Warehouse racking & inventory work</span>
+              <span>Ceiling, lighting & sprinkler installation</span>
+              <span>Retail and showroom fit-out</span>
+              <span>Mall atrium maintenance</span>
+              <span>Industrial plant MEP work</span>
+              <span>Event and exhibition setups</span>
+            </div>
+            <p style="margin-top:12px;">
+              For projects that also need outreach, we can combine scissor lift rentals with boom lift or man lift
+              rentals in Chennai.
+            </p>
+          </div>
+
+          <div class="process-box white">
+            <h3>Simple 4-step scissor lift rental – Chennai</h3>
+            <ul class="steps-small">
+              <li>
+                <div class="step-badge">1</div>
+                <span>Share Chennai site address, indoor/outdoor, working height and approximate platform size needed.</span>
+              </li>
+              <li>
+                <div class="step-badge">2</div>
+                <span>We suggest electric or rough-terrain scissor lift models and clarify floor / access requirements.</span>
+              </li>
+              <li>
+                <div class="step-badge">3</div>
+                <span>You confirm scissor lift rental rates, duration and if you need operator support.</span>
+              </li>
+              <li>
+                <div class="step-badge">4</div>
+                <span>The scissor lift is mobilised to your Chennai site and basic checks are completed on arrival.</span>
+              </li>
+            </ul>
+            <div style="margin-top:10px;">
+              <button class="btn-whatsapp js-open-enquiry" data-prefill="Start scissor lift rental process - Chennai">
+                Start scissor lift rental process
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 – FULL-WIDTH ENQUIRY FORM (BOTTOM, ORANGE SECTION) -->
+    <section class="enquiry-band" id="enquiry">
+      <div class="enquiry-inner reveal">
+        <div class="enquiry-header">
+          <div class="eyebrow">Enquiry Form – Chennai Scissor Lift Rentals</div>
+          <h2>Tell us about your Chennai scissor lift requirement</h2>
+          <p class="sub">
+            Share working height, platform width, site location in Chennai, duration and whether you need an operator.
+            We’ll respond with a scissor lift rental quote – and can also suggest boom lifts or man lifts if your job needs them.
+          </p>
+        </div>
+
+        <!-- this div will be filled with form.html (full width to the site) -->
+        <div class="enquiry-form-wrap" id="scissor-enquiry-form"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER fragment placeholder -->
+  <div id="footer"></div>
+
+  <!-- POPUP MODAL (FORM LOADED HERE TOO) -->
+  <div id="modalBackdrop" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close js-close" aria-label="Close">✕</button>
+      <div id="popup-form-slot"></div>
+    </div>
+  </div>
+
+<script>
+  (function(){
+    /* Load fragments: navbar, footer, form */
+    function loadFragment(id, url, cb){
+      var el = document.getElementById(id);
+      if(!el) return;
+      fetch(url)
+        .then(function(r){ return r.ok ? r.text() : Promise.reject(r.status); })
+        .then(function(html){
+          el.innerHTML = html;
+          if(typeof cb === "function") cb();
+        })
+        .catch(function(err){
+          console.warn("Fragment load failed:", url, err);
+          if(id === "navbar"){
+            el.innerHTML =
+              '<header style="position:fixed;top:0;left:0;right:0;background:#0B192C;padding:12px 0;z-index:1500;box-shadow:0 6px 20px rgba(0,0,0,0.6);">' +
+                '<div style="max-width:1100px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;">' +
+                  '<div style="font-weight:800;color:#FF6500;">SCISSOR LIFT RENTALS CHENNAI</div>' +
+                  '<a href="#enquiry" style="font-size:13px;padding:8px 14px;border-radius:999px;background:#FF6500;color:#fff;font-weight:600;border:2px solid #FF6500;">Enquire</a>' +
+                '</div>' +
+              '</header>';
+          }
+          if(id === "footer"){
+            el.innerHTML =
+              '<footer style="padding:18px 10px;text-align:center;font-size:13px;color:#9fb2c8;background:#020712;border-top:1px solid rgba(255,255,255,0.08);">' +
+              '© 2025 Boomlift Rentals Chennai. All rights reserved.' +
+              '</footer>';
+          }
+        });
+    }
+
+    function initNavbarScripts(){
+      var navWrapper = document.getElementById('navbar');
+      if(!navWrapper) return;
+
+      /* Set active nav link based on current page */
+      var links = navWrapper.querySelectorAll('.nav-menu a');
+      var current = location.pathname.split('/').pop() || 'index.html';
+      links.forEach(function(a){
+        a.classList.remove('active');
+        var href = a.getAttribute('href') || '';
+        if(current === '' && href === 'index.html'){ a.classList.add('active'); }
+        if(href === current){ a.classList.add('active'); }
+      });
+
+      /* Ensure scissor lift link is active on this page */
+      if(current === 'scissor-lift-rentals.html'){
+        links.forEach(function(a){
+          if((a.getAttribute('href') || '').indexOf('scissor-lift-rentals') !== -1){
+            a.classList.add('active');
+          }
+        });
+      }
+
+      var menu = navWrapper.querySelector('#navMenu');
+      var hamb = navWrapper.querySelector('.hamburger');
+
+      if(!menu || !hamb) return;
+
+      function doToggleMenu(){
+        menu.classList.toggle('show');
+      }
+
+      // expose in case inline onclick is present in navbar.html
+      window.toggleMenu = doToggleMenu;
+
+      hamb.addEventListener('click', function(e){
+        e.preventDefault();
+        doToggleMenu();
+      });
+    }
+
+    loadFragment("navbar","navbar.html", initNavbarScripts);
+    loadFragment("footer","footer.html");
+    loadFragment("scissor-enquiry-form","form.html");
+    loadFragment("popup-form-slot","form.html");
+
+    /* Duplicate gallery items for seamless loop */
+    function initStrip(){
+      var track = document.getElementById('stripTrack');
+      if(!track) return;
+      var children = Array.prototype.slice.call(track.children);
+      children.forEach(function(ch){
+        var clone = ch.cloneNode(true);
+        track.appendChild(clone);
+      });
+    }
+
+    /* Modal logic */
+    var modal = document.getElementById("modalBackdrop");
+    var popupSlot = document.getElementById("popup-form-slot");
+
+    function openEnquiryModal(prefillText){
+      if(!modal) return;
+      modal.classList.add("open");
+      modal.setAttribute("aria-hidden","false");
+
+      setTimeout(function(){
+        try{
+          var form = popupSlot.querySelector("form");
+          if(form && prefillText){
+            var sel = form.querySelector("select[name='equipment']");
+            if(sel){
+              var key = prefillText.toLowerCase();
+              var matched = false;
+              for(var i=0;i<sel.options.length;i++){
+                var t = sel.options[i].text.toLowerCase();
+                if(key.indexOf("boom") !== -1 && t.indexOf("boom") !== -1){ sel.selectedIndex = i; matched = true; break; }
+                if(key.indexOf("scissor") !== -1 && t.indexOf("scissor") !== -1){ sel.selectedIndex = i; matched = true; break; }
+                if(key.indexOf("man") !== -1 || key.indexOf("mast") !== -1){
+                  if(t.indexOf("other") !== -1 || t.indexOf("man") !== -1){ sel.selectedIndex = i; matched = true; break; }
+                }
+              }
+              if(!matched && sel.options.length) sel.selectedIndex = 0;
+            }
+          }
+        }catch(e){}
+      },150);
+    }
+
+    function closeEnquiryModal(){
+      if(!modal) return;
+      modal.classList.remove("open");
+      modal.setAttribute("aria-hidden","true");
+    }
+
+    document.addEventListener("click", function(e){
+      var btn = e.target.closest(".js-open-enquiry");
+      if(btn){
+        e.preventDefault();
+        var pre = btn.getAttribute("data-prefill") || btn.textContent;
+        openEnquiryModal(pre.trim());
+        return;
+      }
+
+      var stripItem = e.target.closest(".strip-item");
+      if(stripItem){
+        var label = stripItem.getAttribute("data-prefill") || "Scissor lift enquiry - Chennai";
+        openEnquiryModal(label.trim());
+        return;
+      }
+
+      if(e.target.closest(".js-close") || e.target.closest(".modal-close")){
+        e.preventDefault();
+        closeEnquiryModal();
+        return;
+      }
+
+      if(e.target === modal){
+        closeEnquiryModal();
+      }
+    });
+
+    document.addEventListener("keydown", function(e){
+      if(e.key === "Escape") closeEnquiryModal();
+    });
+
+    /* Scroll reveal init */
+    function initReveal(){
+      var els = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+      if(!('IntersectionObserver' in window)){
+        els.forEach(function(el){ el.classList.add('visible'); });
+        return;
+      }
+      var obs = new IntersectionObserver(function(entries, observer){
+        entries.forEach(function(entry){
+          if(entry.isIntersecting){
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      els.forEach(function(el){ obs.observe(el); });
+    }
+
+    document.addEventListener('DOMContentLoaded', function(){
+      initReveal();
+      initStrip();
+    });
+  })();
+</script>
+
+</body>
+</html>

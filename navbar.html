@@ -1,0 +1,221 @@
+<!-- navbar.html (fragment file to load) -->
+
+<style>
+  /* GOOGLE FONT */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  /* NAVBAR WRAPPER */
+  .navbar {
+    width: 100%;
+    background: #1E3E62;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.35);
+  }
+
+  .nav-container {
+    width: 95%;
+    max-width: 1320px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  /* LOGO (image + text) */
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .logo img {
+    height: 70px;     /* adjust after you upload real logo */
+    width: auto;
+    display: block;
+    /* background-color: white; */
+  }
+
+  .logo-text {
+    font-size: 22px;
+    font-weight: 700;
+    color: #FF6500;
+    letter-spacing: 0.5px;
+  }
+
+  /* NAV MENU */
+  .nav-menu {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .nav-menu li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: .3s ease;
+  }
+
+  .nav-menu li a:hover,
+  .nav-menu li a.active {
+    background: #FF6500;
+  }
+
+  /* WHATSAPP BUTTON */
+  .whatsapp-btn {
+    background: #FF6500;
+    padding: 8px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    margin-left: 10px;
+    transition: .3s;
+    white-space: nowrap;
+    font-size: 14px;
+    border: 1px solid #FF6500;
+  }
+
+  /* HOVER = OPPOSITE COLOUR (white bg, orange text) */
+  .whatsapp-btn:hover {
+    background: #FFFFFF;
+    color: #FF6500;
+  }
+
+  /* HAMBURGER */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 4px;
+  }
+
+  .hamburger span {
+    width: 26px;
+    height: 3px;
+    background: white;
+    border-radius: 6px;
+    transition: 0.3s ease;
+  }
+
+  /* --------- RESPONSIVE STYLES --------- */
+
+  @media (max-width: 1100px) {
+    .logo-text {
+      font-size: 20px;
+    }
+
+    .nav-menu {
+      gap: 12px;
+    }
+
+    .nav-menu li a {
+      padding: 6px 12px;
+      font-size: 13px;
+    }
+
+    .whatsapp-btn {
+      padding: 6px 14px;
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: 950px) {
+    .nav-container {
+      gap: 0;
+    }
+
+    .nav-menu {
+      position: absolute;
+      top: 70px;
+      right: -100%;
+      width: 260px;
+      padding: 20px;
+      background: #1E3E62;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+      border-radius: 12px 0 0 12px;
+      transition: .4s ease;
+    }
+
+    .nav-menu.show {
+      right: 0;
+    }
+
+    .whatsapp-btn {
+      display: none;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .logo img {
+      height: 32px;
+    }
+
+    .logo-text {
+      font-size: 18px;
+    }
+
+    .nav-menu {
+      width: 70%;
+    }
+  }
+</style>
+
+<nav class="navbar">
+  <div class="nav-container">
+
+    <!-- LOGO: replace logo.png when you upload your logo -->
+    <a href="index.html" class="logo">
+      <img src="./images/logo-ch.png" alt="Boom Lift Rentals Logo">
+      <!-- <span class="logo-text">BOOM LIFT RENTALS</span> -->
+    </a>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a class="active" href="index.html">HOME</a></li>
+      <li><a href="boom-lift-rentals.html">BOOM LIFT RENTALS</a></li>
+      <li><a href="scissor-lift-rentals.html">SCISSOR LIFT RENTALS</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+
+    <a class="whatsapp-btn" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">
+      WhatsApp
+    </a>
+
+    <!-- no onclick here -->
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</nav>
